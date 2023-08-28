@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<hmtl>
+
+<!--Stylesheet-->
+<link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+
+<head>
+<h1>Register new user</h1>
+</head>
+<body>
+<form action="/register" method="post">
+<label for="username">Email</label> <input type="email" name="email" placeholder="example@email.com">
+<label for="password">Password</label> <input type="password" name="password">
+<button class="button is-block is-info is-large is-fullwidth">Submit</button>
+</form>
+<li id="listitem"><a href="http://localhost:5000/login">Have an account? Login here</a></li>
+
+{% if error %}
+<p class="error"><strong><Error:</strong>{{error}}
+{% endif %}
+</body>
+</html>

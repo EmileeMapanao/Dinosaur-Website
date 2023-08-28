@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+{% block content %}
+<link rel= "stylesheet" type= "text/css" href= "/static/css/style.css"/>
+<form method="POST" action="http://localhost:5000/homepage/">
+
+<div class="topnav">
+ <a class="active" href="http://localhost:5000/mosasaurus">Home</a>
+ <a href="http://localhost:5000/spinosaurus">Spinosaurus</a>
+ <a href="http://localhost:5000/trex">T-Rex</a>
+ <a href="http://localhost:5000/mosasaurus/">Mosasaurus</a>
+ <a href="http://localhost:5000/passwordupdate/">Update password</a>
+ <a href="http://localhost:5000/logout/">Log out</a>
+</form>
+<head>
+ <h1> Welcome! </h1>
+</head>
+
+{% endblock %}
+</div>
+</html>
